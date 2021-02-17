@@ -10,6 +10,7 @@ namespace Banco
     {
         static void Main(string[] args)
         {
+            // INICIALIZAÇÃO DAS VARIAVEIS
             int escolha;
             double deposito, saque, transferir;
             Conta conta = new Conta();
@@ -29,7 +30,6 @@ namespace Banco
                 try
                 {
                     escolha = int.Parse(Console.ReadLine());
-
                 }
                 catch (Exception) // CASO INSERIR VALOR DIFERENTE QUE NÚMERO ATRIBUI 7 E O LAÇO COMEÇA NOVAMENTE
                 {
@@ -38,7 +38,7 @@ namespace Banco
 
                 Console.Clear(); // LIMPA TELA
 
-                // SE INFORMAR ALGUMA AÇÃO DO BANCO ANTES DE CADASTRAR A CONTA CAI NO IF E JÁ O DIRECIONA PARA CADASTRO
+                // SE INFORMAR ALGUMA AÇÃO DO BANCO ANTES DE CADASTRAR DIRECIONA PARA CADASTRO
                 if (cliente.Nome == "User" && escolha > 1) { 
                     Console.WriteLine("Primeiramente Informe os dados para criação de uma conta:");
                     escolha = 1;
@@ -60,6 +60,7 @@ namespace Banco
                     case 2: // DEPÓSITO
 
                         Console.Write("Qual o valor do depósito: ");
+                        try{
                         deposito = double.Parse(Console.ReadLine());
                         if (deposito > 0) // CONDIÇÃO PARA DEPOSITO
                         {
@@ -68,11 +69,14 @@ namespace Banco
                         }
                         else
                             Console.WriteLine("Depósito não concluido, saldo atual: " + cliente.conta.Saldo);
+                        }catch(Exception){
+                        }
                         break;
 
                     case 3: // SAQUE
 
                         Console.Write("Qual o valor do saque: ");
+                        try{
                         saque = double.Parse(Console.ReadLine());
                         if ((cliente.conta.Saldo - saque) >= 0 && saque > 0)// CONDIÇÃO PARA SAQUE
                         { 
@@ -81,11 +85,14 @@ namespace Banco
                         }
                         else
                             Console.WriteLine("Saque não concluido, saldo atual: " + cliente.conta.Saldo);
+                        }catch(Exception){
+                        }
                         break;
 
                     case 4: // TRANSFERÊNCIA
 
                         Console.Write("Valor a ser transferido: ");
+                        try{
                         transferir = double.Parse(Console.ReadLine());
                         if ((cliente.conta.Saldo - transferir) >= 0 && transferir > 0) // CONDIÇÃO PARA A TRANSFERÊNCIA
                         {
@@ -95,7 +102,9 @@ namespace Banco
                         }
                         else 
                             Console.WriteLine("Transferência não concluida, saldo atual: " + cliente.conta.Saldo);
-                        break;
+                        }catch(Exception){
+                        }
+                            break;
 
                     case 5: // SALDO
 

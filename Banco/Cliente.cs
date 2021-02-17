@@ -40,10 +40,5 @@ namespace Banco
                 "\n\nCONTA\n" + conta.ToString() + 
                 "\n\nENDEREÇO\n" + endereco.ToString());
         }
-
-        public double GetSaldo()
-        {
-            return conta.Saldo;
-        }
     }
 }

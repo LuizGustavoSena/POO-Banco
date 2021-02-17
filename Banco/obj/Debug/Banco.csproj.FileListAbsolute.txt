@@ -5,3 +5,10 @@ C:\Users\Luiz Sena\source\repos\Banco\Banco\obj\Debug\Banco.csprojAssemblyRefere
 C:\Users\Luiz Sena\source\repos\Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
 C:\Users\Luiz Sena\source\repos\Banco\Banco\obj\Debug\Banco.exe
 C:\Users\Luiz Sena\source\repos\Banco\Banco\obj\Debug\Banco.pdb
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\bin\Debug\Banco.exe.config
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\bin\Debug\Banco.exe
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\bin\Debug\Banco.pdb
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\obj\Debug\Banco.csprojAssemblyReference.cache
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\obj\Debug\Banco.csproj.CoreCompileInputs.cache
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\obj\Debug\Banco.exe
+C:\Users\LuizSena\Source\Repos\LuizGustavoSena\POO-Banco\Banco\obj\Debug\Banco.pdb
